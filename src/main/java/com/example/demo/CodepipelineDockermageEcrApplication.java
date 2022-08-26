@@ -15,6 +15,12 @@ public class CodepipelineDockermageEcrApplication {
 		return "welcome codepipeline docker image Ecr application";
 	}
 	
+	@GetMapping("/second")
+	public String second() {
+		return "welcome codepipeline docker image Ecr application and this is second end point";
+	}
+	
+	
 	public static void main(String[] args) {
 		SpringApplication.run(CodepipelineDockermageEcrApplication.class, args);
 	}
